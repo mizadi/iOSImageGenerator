@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B66C66EE2E1D06E5007AE4C6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B66C66ED2E1D06E1007AE4C6 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B66C66DB2E1D0202007AE4C6 /* iOSImageGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSImageGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66C66ED2E1D06E1007AE4C6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		B66C66D22E1D0202007AE4C6 = {
 			isa = PBXGroup;
 			children = (
+				B66C66ED2E1D06E1007AE4C6 /* README.md */,
 				B66C66DD2E1D0202007AE4C6 /* iOSImageGenerator */,
 				B66C66DC2E1D0202007AE4C6 /* Products */,
 			);
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66C66EE2E1D06E5007AE4C6 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
