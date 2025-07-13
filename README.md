@@ -80,7 +80,7 @@ A simple and powerful SwiftUI app that generates beautiful AI illustrations from
 
 ## 🧩 Built With
 
-- [SwiftUI](https://developer.apple.com/xcode/swiftui/)
+- [SwiftUI](https://developer.apple.com/documentation/swiftui/)
 - [ImagePlayground](https://developer.apple.com/documentation/imageplayground)
 - [Swift Concurrency (async/await)](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html)
 
