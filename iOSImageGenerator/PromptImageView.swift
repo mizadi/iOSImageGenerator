@@ -22,7 +22,9 @@ struct PromptImageView: View {
                     .padding(.horizontal)
 
                 Button(action: {
-                    generateImage(from: prompt)
+                    Task {
+                        await generateImage(from: prompt)
+                    }
                 }) {
                     Text("Generate Image")
                         .frame(maxWidth: .infinity)
@@ -57,20 +59,17 @@ struct PromptImageView: View {
         }
     }
 
-    private func generateImage(from prompt: String) {
+    private func generateImage(from prompt: String) async {
         isLoading = true
         image = nil
         errorMessage = nil
-
-        Task {
-            do {
-                let generatedImage = try await ImageGenerator.generate(from: prompt)
-                image = generatedImage
-            } catch {
-                errorMessage = error.localizedDescription
-            }
-            isLoading = false
+        do {
+            image = try await ImageGenerator.generate(from: prompt)
+        } catch {
+            errorMessage = error.localizedDescription
         }
+
+        isLoading = false
     }
 }
 
